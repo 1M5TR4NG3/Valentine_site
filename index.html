@@ -152,15 +152,17 @@
     noBtn.addEventListener("mouseenter", moveNoButton);
     noBtn.addEventListener("click", moveNoButton);
 
-    function answerYes() {
-  noBtn.style.display = "none";
-  result.style.display = "block";
-  startPetals();
+    
+  function answerYes() {
+    noBtn.style.display = "none";
+    result.style.display = "block";
+    startPetals();
 
-  // open whatsapp
-      setTimeout(() => {
-  window.open("https://wa.me/27601821816?text=Hi%21%20I%20said%20Yes%20%F0%9F%92%96", "_blank");
-}, 2000);
+    setTimeout(function () {
+      window.location.href =
+        "https://wa.me/27601821816?text=Hi%21%20I%20said%20Yes%20%F0%9F%92%96";
+    }, 1500);
+  }
 
     function startPetals() {
       for (let i = 0; i < 45; i++) {
