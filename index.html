@@ -153,9 +153,12 @@
     noBtn.addEventListener("click", moveNoButton);
 
     function answerYes() {
-      noBtn.style.display = "none";
-      result.style.display = "block";
-      startPetals();
+  noBtn.style.display = "none";
+  result.style.display = "block";
+  startPetals();
+
+  // Open WhatsApp
+  window.open("https://wa.me/27601821816?text=Hi%21%20I%20said%20Yes%20%F0%9F%92%96", "_blank");
     }
 
     function startPetals() {
